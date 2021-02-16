@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.wrapper{
+    width: 100%;
+    margin: auto;
+}
+.wrapper .our_team{
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.team{
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    position: relative;
+}
+.team img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.team_role{
+    padding: 10px;
+    background: #000;
+    color: white;
+    font-style: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.menu{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 30px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #242424;
+}
+.menu_point{
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.menu_point:first-child{
+    top: 25%;
+}
+.menu_point:last-child{
+    top: 75%;
+}
+.info{
+    position: absolute;
+    top: 70px;
+    right: 5px;
+    width: 280px;
+    background: #0d0603;
+    padding: 10px;
+    text-align: right;
+    display: none;
+    color: white;
+}
+
+.info h4{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.info p{
+    line-height: 25px;
+}
+.info:before{
+    content: '';
+    position: absolute;
+    top: -19px;
+    left: 5px;
+    border: 10px solid;
+    border-color:  transparent transparent #0d0603 transparent;
+}
+.menu.active + .info{
+    display: block;
+}

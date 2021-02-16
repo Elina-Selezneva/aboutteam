@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <div class="our_team">
+        <div class="team team_1">
+            <div class="team_img">
+                <img src="img/member1.jpg" alt="team_member">
+            </div>
+            <div class="team_role">Director</div>
+
+            <div class="menu">
+                <div class="menu_point"></div>
+                <div class="menu_point"></div>
+                <div class="menu_point"></div>
+            </div>
+
+            <div class="info">
+                <h4>Maria Swarz</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, nobis!</p>
+            </div>
+        </div>
+        <div class="team team_2">
+            <div class="team_img">
+                <img src="img/member2.jpg" alt="team_member">
+            </div>
+            <div class="team_role">Manager</div>
+            <div class="menu">
+                <div class="menu_point"></div>
+                <div class="menu_point"></div>
+                <div class="menu_point"></div>
+            </div>
+
+            <div class="info">
+                <h4>Feona Solz</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, nobis!</p>
+            </div>
+        </div>
+        <div class="team team_3">
+            <div class="team_img">
+                <img src="img/member3.jpg" alt="team_member">
+            </div>
+            <div class="team_role">Consultant</div>
+            <div class="menu">
+                <div class="menu_point"></div>
+                <div class="menu_point"></div>
+                <div class="menu_point"></div>
+            </div>
+
+            <div class="info">
+                <h4>Martin Vegnar</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, nobis!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var menu_items = document.querySelectorAll('.menu');
+    Array.from(menu_items).forEach(function (menu) {
+        menu.addEventListener('click', function () {
+            this.classList.toggle('active');
+        });
+    })
+</script>
+</body>
+</html>
